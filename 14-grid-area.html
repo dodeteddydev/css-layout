@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Area</title>
+
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 100px auto 100px;
+        grid-template-rows: 50px auto 100px;
+        grid-template-areas:
+          "header header header"
+          ". content ."
+          "footer footer footer";
+      }
+
+      .header {
+        background-color: cadetblue;
+        grid-area: header;
+      }
+
+      .content {
+        background-color: antiquewhite;
+        border: 1px solid brown;
+        padding: 10px;
+        margin: 10px;
+        grid-area: content;
+      }
+
+      .footer {
+        background-color: cadetblue;
+        grid-area: footer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">Welcome to my website</div>
+
+      <div class="content">
+        <h1>Hello World</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure aut
+          nostrum perferendis eaque illo, debitis ab blanditiis fugit aperiam
+          rem vitae nisi! Ab nisi minus vel odio. Tenetur, excepturi fuga?
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus
+          quae incidunt doloremque blanditiis totam quibusdam mollitia aut
+          deleniti labore. Nulla quod quo esse nobis asperiores labore ea culpa
+          sapiente eligendi.
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus
+          quae incidunt doloremque blanditiis totam quibusdam mollitia aut
+          deleniti labore. Nulla quod quo esse nobis asperiores labore ea culpa
+          sapiente eligendi.
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus
+          quae incidunt doloremque blanditiis totam quibusdam mollitia aut
+          deleniti labore. Nulla quod quo esse nobis asperiores labore ea culpa
+          sapiente eligendi.
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus
+          quae incidunt doloremque blanditiis totam quibusdam mollitia aut
+          deleniti labore. Nulla quod quo esse nobis asperiores labore ea culpa
+          sapiente eligendi.
+        </p>
+      </div>
+
+      <div class="footer">Developed by me &#x1F5A4;</div>
+    </div>
+  </body>
+</html>

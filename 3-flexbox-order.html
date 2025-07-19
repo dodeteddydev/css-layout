@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlexBox Order</title>
+
+    <style>
+      .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      .content {
+        background-color: blanchedalmond;
+        display: inline-block;
+        width: 300px;
+        height: 300px;
+        padding: 10px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content" style="order: 3">
+        <h1>Ini adalah content 1</h1>
+
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis
+          atque, fugiat quaerat aut harum excepturi, dignissimos aperiam dolorum
+          omnis ducimus ipsa nobis dolore velit deserunt quod. Distinctio amet
+          maiores voluptate!
+        </p>
+      </div>
+
+      <div class="content" style="order: 2">
+        <h1>Ini adalah content 2</h1>
+
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis
+          atque, fugiat quaerat aut harum excepturi, dignissimos aperiam dolorum
+          omnis ducimus ipsa nobis dolore velit deserunt quod. Distinctio amet
+          maiores voluptate!
+        </p>
+      </div>
+
+      <div class="content" style="order: 1">
+        <h1>Ini adalah content 3</h1>
+
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis
+          atque, fugiat quaerat aut harum excepturi, dignissimos aperiam dolorum
+          omnis ducimus ipsa nobis dolore velit deserunt quod. Distinctio amet
+          maiores voluptate!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
