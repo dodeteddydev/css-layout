@@ -1,0 +1,50 @@
+@media all {
+  .container {
+    display: grid;
+    gap: 20px;
+  }
+
+  .content {
+    background-color: greenyellow;
+    border: 1px solid hotpink;
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 10px) and (max-width: 500px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ========================================
+
+   1. Extra Small (xs) - Smartphone kecil
+      max-width: 575.98px
+
+   2. Small (sm) - Smartphone besar / Tablet kecil
+      min-width: 576px and max-width: 767.98px
+
+   3. Medium (md) - Tablet
+      min-width: 768px and max-width: 991.98px
+
+   4. Large (lg) - Laptop
+      min-width: 992px and max-width: 1199.98px
+
+   5. Extra Large (xl) - Desktop besar
+      min-width: 1200px
+
+   Contoh penulisan:
+
+   @media (max-width: 575.98px) {
+     // untuk HP kecil
+   }
+
+   ======================================== */
